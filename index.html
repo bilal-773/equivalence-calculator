@@ -8,49 +8,65 @@
 </head>
 <body>
     <div class="container">
-        <h1>Equivalence Calculator</h1>
+        <h1>FAST University Equivalence Calculator</h1>
+        <h2>made by Muhammad Bilal</h2>
         
+        <div class="qualification">
+            <label>
+                <input type="radio" id="olevels" name="qualification" value="olevels" checked> Olevels
+            </label>
+            <label>
+                <input type="radio" id="matricFsc" name="qualification" value="matricFsc"> Matric and FSC
+            </label>
+        </div>
+
+        <div class="section" id="olevelsSection">
+            <h2>Olevels Equivalence</h2>
+            <label>Olevels Equivalence Percentage: <input type="number" step="0.01" id="olevelsEquivalence"></label>
+        </div>
+
+        <div class="section" id="matricFscSection" style="display: none;">
+            <h2>Matric and FSC</h2>
+            <label>Matric Percentage: <input type="number" step="0.01" id="matricPercentage"></label>
+            <label>FSC Part 1 Percentage: <input type="number" step="0.01" id="fscPercentage"></label>
+        </div>
+
         <div class="section">
             <h2>Advanced Maths</h2>
-            <label>Total Questions: <input type="number" id="advTotal" /></label>
-            <label>Questions Attempted: <input type="number" id="advAttempted" /></label>
-            <label>Correct Questions: <input type="number" id="advCorrect" /></label>
+            <label>Total Questions: 50</label>
+            <label>Questions Attempted: <input type="number" id="advAttempted"></label>
+            <label>Correct Questions: <input type="number" id="advCorrect"></label>
             <p>Positive Marks: <span id="advPositive">0</span></p>
             <p>Negative Marks: <span id="advNegative">0</span></p>
         </div>
-        
+
         <div class="section">
             <h2>Basic Maths</h2>
-            <label>Total Questions: <input type="number" id="basicTotal" /></label>
-            <label>Questions Attempted: <input type="number" id="basicAttempted" /></label>
-            <label>Correct Questions: <input type="number" id="basicCorrect" /></label>
+            <label>Total Questions: 20</label>
+            <label>Questions Attempted: <input type="number" id="basicAttempted"></label>
+            <label>Correct Questions: <input type="number" id="basicCorrect"></label>
             <p>Positive Marks: <span id="basicPositive">0</span></p>
             <p>Negative Marks: <span id="basicNegative">0</span></p>
         </div>
-        
+
         <div class="section">
             <h2>English</h2>
-            <label>Total Questions: <input type="number" id="engTotal" /></label>
-            <label>Questions Attempted: <input type="number" id="engAttempted" /></label>
-            <label>Correct Questions: <input type="number" id="engCorrect" /></label>
+            <label>Total Questions: 30</label>
+            <label>Questions Attempted: <input type="number" id="engAttempted"></label>
+            <label>Correct Questions: <input type="number" id="engCorrect"></label>
             <p>Positive Marks: <span id="engPositive">0</span></p>
             <p>Negative Marks: <span id="engNegative">0</span></p>
         </div>
-        
+
         <div class="section">
             <h2>IQ</h2>
-            <label>Total Questions: <input type="number" id="iqTotal" /></label>
-            <label>Questions Attempted: <input type="number" id="iqAttempted" /></label>
-            <label>Correct Questions: <input type="number" id="iqCorrect" /></label>
+            <label>Total Questions: 20</label>
+            <label>Questions Attempted: <input type="number" id="iqAttempted"></label>
+            <label>Correct Questions: <input type="number" id="iqCorrect"></label>
             <p>Positive Marks: <span id="iqPositive">0</span></p>
             <p>Negative Marks: <span id="iqNegative">0</span></p>
         </div>
-        
-        <div class="section">
-            <h2>Olevels Equivalence</h2>
-            <label>Olevels Equivalence Percentage: <input type="number" step="0.01" id="olevelsEquivalence" /></label>
-        </div>
-        
+
         <button onclick="calculate()">Calculate</button>
         
         <div class="section">
@@ -64,3 +80,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
